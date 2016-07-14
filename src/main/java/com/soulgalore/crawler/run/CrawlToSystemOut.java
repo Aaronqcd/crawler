@@ -66,7 +66,10 @@ public class CrawlToSystemOut extends AbstractCrawl {
     for (CrawlerURL workingUrls : result.getUrls()) {
       System.out.println(workingUrls.getUrl());
     }
-
+    System.out.println("----------------------------------");
+    /*for (CrawlerURL workingUrls : result.get) {
+      System.out.println(workingUrls.getUrl());
+    }*/
 
     crawler.shutdown();
   }
